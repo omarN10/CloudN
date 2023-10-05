@@ -5,7 +5,7 @@
 
 // console.log(data);
 
-//any varialbe declared in function only accessible in the function scope
+//any variable declared in function only accessible in the function scope
 function test() {
 	var data = 5;
 	console.log(data);
