@@ -34,4 +34,3 @@ if (first_name == "sam") {
 } else {
 	// console.log("name entered is wrong");
 }
-//t
