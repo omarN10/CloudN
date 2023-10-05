@@ -5,5 +5,3 @@
 
 //const is a variable cannot be changed after declaration
 
-//let, var, const
-//const number1 = 10;   //cannot be changed in the future
