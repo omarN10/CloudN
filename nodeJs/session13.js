@@ -12,7 +12,7 @@ console.log(data);
 	console.log(data);
 }
 function how() {
+	var data = 8; //inside the function you ignore the variable in the global scope and override it with new declaration
 	console.log(data);
-	var data = 8;
 }
-// how();
+how();
