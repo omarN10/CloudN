@@ -2,7 +2,7 @@
 
 //get the factorial !5
 
-let number = 5,
+let number = 10,
 	total = 1;
 let iteration = number;
 // for (let i = 0; i <= 5; i++) {
@@ -22,8 +22,8 @@ let iteration = number;
 // 	console.log(total);
 // }
 
-for (let i = 1; i <= number; i++) {
+for (let i = 2; i <= number; i++) {
 	total = total * i;
 	console.log(total);
 }
-// console.log(total);
+console.log(total);
