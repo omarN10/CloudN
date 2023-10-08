@@ -22,8 +22,13 @@ let iteration = number;
 // 	console.log(total);
 // }
 
-for (let i = 2; i <= number; i++) {
-	total = total * i;
-	console.log(total);
-}
-console.log(total);
+// for (let i = 2; i <= number; i++) {
+// 	total = total * i;
+// 	console.log(total);
+// }
+// console.log(total);
+
+
+//prime number from  1 to n
+//input = n
+
