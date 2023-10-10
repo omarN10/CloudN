@@ -27,5 +27,23 @@ addNumbers(num1, num2); */
 // let total = addNumbers(num1, num2);
 // console.log(total);
 
-//edit ("document object model: DOM") 
-document.getElementById("elementID").innerHTML = "testing this line "
+//edit ("document object model: DOM")
+// let name = "omar nasr";
+// if (confirm("is ok")) {
+//   txt = "you pressed ok";
+// } else {
+//   txt = "you pressed cancel";
+// }
+// document.getElementById("elementID").innerHTML = txt;
+
+// let name1 = prompt("your name", "Name");
+// let age = prompt("your age", "0");
+// let text;
+// if (age == null || age == "") {
+//   text = "user cancelled the prompt";
+// } else {
+//   text = `Hello ${name1} and you age is ${age}  `;
+// }
+
+// document.getElementById("elementID").innerHTML = text;
+// alert("hello \nomar");
