@@ -27,3 +27,5 @@ addNumbers(num1, num2); */
 // let total = addNumbers(num1, num2);
 // console.log(total);
 
+//edit ("document object model: DOM") 
+document.getElementById("elementID").innerHTML = "testing this line "
