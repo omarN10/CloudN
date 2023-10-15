@@ -33,18 +33,17 @@
 
 //testing with async to return promise
 const codeBlocker = async () => {
-	return Promise.resolve().then(() => {
-		let i = 0;
-		while (i < 10) {
+  return Promise.resolve().then(() => {
+    let i = 0;
+    while (i < 10) {
+      console.log("omar");
 
-			console.log("omar");
+      console.log("omar");
 
-            console.log("omar");
-
-			i++;
-		}
-		return "count to 10k is complete";
-	});
+      i++;
+    }
+    return "count to 10k is complete";
+  });
 };
 
 // console.log("test a");
@@ -56,17 +55,18 @@ const codeBlocker = async () => {
 //constructor function example
 
 let person = function (name, age, id) {
-	this.name = name;
-	this.age = age;
-	this.id = id;
+  this.name = name;
+  this.age = age;
+  this.id = id;
+  
 };
 let person1 = new person("omar", 27, 10);
 
-console.log(
-	`person1 name is ${person1.name}, age is ${person1.age} and id is ${person1.id}`,
-);
+// console.log(
+// 	`person1 name is ${person1.name}, age is ${person1.age} and id is ${person1.id}`,
+// );
 
-console.log("test a");
-codeBlocker().then(x => console.log(x));
-console.log("test b");
+// console.log("test a");
+// codeBlocker().then(x => console.log(x));
+// console.log("test b");
 
