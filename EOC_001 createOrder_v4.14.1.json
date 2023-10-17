@@ -1,0 +1,52 @@
+{
+  "shoppingCartId": "String",
+  "version": "number",
+  "isLocked": "boolean",
+  "requestedStartDate": "String",
+  "requestedCompletionDate": "String",
+  "run": "boolean",
+  "isBundled": "boolean",
+  "requestMode": "String",
+  "attrs": [
+    {
+      "name": "String",
+      "value": "String"
+    }
+  ],
+  "orderItems": [
+    {
+      "item": {
+        "id": "string",
+        "orderType": "string",
+        "action": "string",
+        "productOffering": {
+          "id": "string"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "String",
+              "value": "s"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "relatedEntities": [
+    {
+      "type": "String",
+      "name": "String",
+      "reference": "String",
+      "entityDescription": "String",
+      "entity": {
+        "entityDetails": [
+          {
+            "name": "String",
+            "value": "String"
+          }
+        ]
+      }
+    }
+  ]
+}
