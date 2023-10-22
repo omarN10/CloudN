@@ -1,0 +1,198 @@
+{
+  "shoppingCartId": "sim-6",
+  "version": 1,
+  "requestedStartDate":"2023-10-18T00:00:07.144Z",
+  "requestedCompletionDate": "2023-10-23T15:08:07.144Z",
+  "orderItems": [
+      {
+          "item": {
+              "id": "0",
+              "orderType": "ProductOfferingOrder",
+              "action": "Add",
+              "productOffering": {
+                  "id": "Test_PO_INTERNET"
+              },
+              "product": {
+                  "productCharacteristics": [
+                      {
+                          "name": "bandwidth",
+                          "value": "500"
+                      },
+                      {
+                        "name": "categoryTest",
+                        "value": "INTERNET"
+                      }
+                  ],
+                  "productPrice": [
+                      {
+                          "popId": "categoryTest",
+                          "overrideAmount": 0.0
+                      }
+                  ]
+              },
+              "quantity": {
+                  "amount": 1
+              }
+          }
+      }
+  ],
+  "attrs": [
+      {
+          "name": "iamToken",
+          "value": "9217"
+      },
+      {
+          "name": "externalMessageId",
+          "value": "221043ad-7e88-41e6-bf8c-3e708504420a"
+      },
+      {
+          "name": "triggeringSystem",
+          "value": "ONLINE"
+      },
+      {
+          "name": "promoCode",
+          "value": "Promo99Prod"
+      }
+  ],
+  "relatedEntities": [
+      {
+          "type": "User",
+          "reference": "E99xvbUeRGisohMDzshZaA",
+          "entity": {
+              "entityDetails": [
+                  {
+                      "name": "languagePreference",
+                      "value": "ar"
+                  },
+                  {
+                      "name": "isNewUser",
+                      "value": "false"
+                  },
+                  {
+                      "name": "name",
+                      "value": "Ø­Ù…Ø²Ù‡"
+                  }
+              ]
+          }
+      },
+      {
+          "type": "Place",
+          "name": "shippingAddress",
+          "reference": "shippingAddress",
+          "entity": {
+              "entityDetails": [
+                  {
+                      "name": "address",
+                      "value": "RANA2590ØŒ 2590 Ø±Ù‚Ù… 26ØŒ 6878ØŒ Ø­ÙŠ Ø§Ù„Ù†Ø±Ø¬Ø³ØŒ Ø§Ù„Ø±ÙŠØ§Ø¶ 13323ØŒ Ø§Ù„Ø³Ø¹ÙˆØ¯ÙŠØ©"
+                  },
+                  {
+                      "name": "area",
+                      "value": "Ù…Ù†Ø·Ù‚Ø© Ø§Ù„Ø±ÙŠØ§Ø¶"
+                  },
+                  {
+                      "name": "contactNumber",
+                      "value": "966536420210"
+                  },
+                  {
+                      "name": "locationId",
+                      "value": "LMD01"
+                  },
+                  {
+                      "name": "city",
+                      "value": "Ø§Ù„Ø±ÙŠØ§Ø¶"
+                  },
+                  {
+                      "name": "cityCode",
+                      "value": "3"
+                  },
+                  {
+                      "name": "coordinates",
+                      "value": "24.8174128,46.66703099999999"
+                  },
+                  {
+                      "name": "languagePreference",
+                      "value": "ar"
+                  },
+                  {
+                      "name": "name",
+                      "value": "Ø­Ù…Ø²Ù‡"
+                  }
+              ]
+          }
+      },
+      {
+          "type": "Store",
+          "reference": "LMD01"
+      },
+      {
+          "type": "Account",
+          "reference": "0-1-5-3111155",
+          "entity": {
+              "entityDetails": []
+          }
+      },
+      {
+          "type": "Customer",
+          "name": "Customer",
+          "reference": "60ad8656-2adc-11ee-8fb4-005056b1adb5",
+          "entity": {
+              "entityDetails": [
+                  {
+                      "name": "customerIdType",
+                      "value": "2"
+                  },
+                  {
+                      "name": "customerIdNumber",
+                      "value": "2159657960"
+                  }
+              ]
+          }
+      },
+      {
+          "type": "Channel",
+          "name": "DIGAPP"
+      },
+      {
+          "type": "PayerAccount",
+          "entity": {
+              "entityDetails": [
+                  {
+                      "name": "type",
+                      "value": "total"
+                  },
+                  {
+                      "name": "uniqueTransactionId",
+                      "value": "1253be9a-bee9-4631-9d7a-8c63bcb9aa1c"
+                  },
+                  {
+                      "name": "method",
+                      "value": "DELIVERY"
+                  },
+                  {
+                      "name": "amount",
+                      "value": "2.3"
+                  },
+                  {
+                      "name": "currency",
+                      "value": "SAR"
+                  },
+                  {
+                      "name": "discountAmount",
+                      "value": "-198.0"
+                  },
+                  {
+                      "name": "totalVat",
+                      "value": "0.3"
+                  },
+                  {
+                      "name": "totalPaidAmount",
+                      "value": "2.3"
+                  }
+              ]
+          }
+      }
+  ],
+  "isLocked": false,
+  "run": true,
+  "requestMode": "Async"
+}
