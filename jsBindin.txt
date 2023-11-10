@@ -1,0 +1,129 @@
+/*
+* Changes Done by sanan
+* completed
+*/
+
+try{
+    jawwyOM.portability.testPortout();
+var orderId = Listener.getRequestPathDynamicValue("orderId");
+//jawwyIntegrationsListener.updateAPI.test();
+if(orderId == null)
+{
+    UserProfile.setHttpResponseCode("404");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "ERROR";
+    response.errorCode = "0";
+    response.details = "order id is null";
+    return response;
+}
+if(input == null)
+{
+    UserProfile.setHttpResponseCode("400");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "ERROR";
+    response.errorCode = "EOC_ERROR_1002";
+    response.reason = "Request is empty";
+    response.details = "Request structure is empty";
+    return response;
+}
+if(input.status == null || input.status == "")
+{
+    UserProfile.setHttpResponseCode("400");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "ERROR";
+    response.errorCode = "EOC_ERROR_1002";
+    response.reason = "Missing mandatory field status";
+    response.details = "Value for status is missing or null value field";
+    return response;
+}
+    var finder = new Finder("common:external_OM_order_mappingFinder");
+    finder.searchDocument.uniqueOrderId =orderId;
+    var external_OM_order_mappingFinder = finder.search();
+    if (external_OM_order_mappingFinder.length > 0)
+    {
+        try
+    {
+        var dataOrder =  Order.getOrderById(external_OM_order_mappingFinder[0].omOrderId); // needs to check
+        var processId = external_OM_order_mappingFinder[0].processId;
+        var process = Process.getProcessInfo(processId);
+        var processDoc = Process.getProcessDocument(processId);
+        var callback_Received = external_OM_order_mappingFinder[0].callback_Received;
+    }
+    catch(e){
+
+
+            UserProfile.setHttpResponseCode("400");
+            var response = new DataStructure("eoc_commons.fault");
+            response.status = "ERROR";
+            response.errorCode = "2";
+            response.details = e;
+            return response;
+
+    }
+    }
+    else
+{
+    UserProfile.setHttpResponseCode("404");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "ERROR";
+    response.errorCode = "3";
+    response.details = "Comptel OrderId:"+orderId +"not found";
+    return response;
+}
+if(processId == null)
+{
+    UserProfile.setHttpResponseCode("404");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "ERROR";
+    response.errorCode = "5";
+    response.details = "Comptel OrderId:"+ orderId +"not found";;
+    return response;
+
+}
+if(processDoc.comptelCallBackStatus != "In Waiting")
+{
+    UserProfile.setHttpResponseCode("409");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "Failure";
+    response.errorCode = "4";
+    response.details = "Order is not expecting this call";
+    return response;
+
+}
+if (callback_Received == "1")
+{
+    UserProfile.setHttpResponseCode("409");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "ERROR";
+    response.errorCode = "4";
+    response.details = "Order is not expecting this call";
+    return response;
+}
+else
+{
+    external_OM_order_mappingFinder[0].callback_Received = "1";
+    external_OM_order_mappingFinder[0].save();
+    Global.commitTransaction("ORDER");
+}
+//  var dataOrder =  Order.getOrderById(external_OM_order_mappingFinder[0].omOrderId); // needs to check
+// var processId = external_OM_order_mappingFinder[0].processId;
+
+
+common.upsertMessageLog(UserProfile.getMsgLogDoc(),process,null,dataOrder.id,'ComptelCallBack');
+Process.sendMessageToProcess(processId, null, "jawwyIntegrations.updateInfoAPI/UpdateOrderComptelCallBack", input);
+UserProfile.setHttpResponseCode("204");
+return response;
+}
+catch(e)
+{
+
+    UserProfile.setHttpResponseCode("400");
+    var response = new DataStructure("eoc_commons.fault");
+    response.status = "ERROR";
+    response.errorCode = "2";
+    response.details = e;
+    return response;
+}
+
+// 94 91 94 92 94 92 94 92 89 94 90
+// 94 94 94 94 88 94 89 89 94 93 89 94 94
