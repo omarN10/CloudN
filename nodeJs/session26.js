@@ -32,8 +32,11 @@ test.testModule(); */
 
 //use the built in modules
 let os = require("os");
-console.log("OS: ", os.platform(),os.arch());
-// console.log(os.tmpdir());
+/* console.log("OS: ", os.platform(),os.arch());
+console.log(os.tmpdir());
 console.log(os.totalmem());
 console.log(os.freemem());
 console.log(os.uptime()/60/60);
+ */
+
+let util = require('util');
