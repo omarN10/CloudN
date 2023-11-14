@@ -52,3 +52,4 @@ let honda = new Car("Honda", "Civic", 2000, "Natural", 158, 138, "red");
 // honda.printInfo();
 // console.log(honda.model);
 // console.log(typeof(Car));
+

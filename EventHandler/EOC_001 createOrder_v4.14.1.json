@@ -1,0 +1,432 @@
+{
+  "shoppingCartId": "18b698b1-3acd-44fc-a50b-a80b39823399",
+  "version": 1,
+  "requestedCompletionDate": "2023-11-15T06:29:49.383Z",
+  "requestedStartDate": "2023-11-14T06:29:49.383Z",
+  "orderItems": [
+    {
+      "item": {
+        "id": "0",
+        "description": "Standard Shipping",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "productOffering": {
+          "id": "STANDARD"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "shippingOrderLineItemId",
+              "value": "0"
+            }
+          ],
+          "productPrice": [
+            {
+              "popId": "OTC_SHIPPING",
+              "overrideAmount": 0.0
+            }
+          ]
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    },
+    {
+      "item": {
+        "id": "1",
+        "description": "Jawwy SIM 30 Extra",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "productOffering": {
+          "id": "JWYSTCSIM30XTRA"
+        },
+        "product": {
+          "productCharacteristics": [],
+          "productPrice": [
+            {
+              "popId": "OTC_TAX",
+              "characteristics": [
+                {
+                  "name": "taxRate",
+                  "value": "15.0"
+                }
+              ],
+              "overrideAmount": 4.5
+            },
+            {
+              "popId": "PRC5001599",
+              "overrideAmount": 30.0
+            }
+          ]
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    },
+    {
+      "item": {
+        "id": "2",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "relatedOrderItems": [
+          {
+            "role": "ChildOf",
+            "reference": "1"
+          },
+          {
+            "role": "Requires",
+            "reference": "0"
+          }
+        ],
+        "productOffering": {
+          "id": "PRD1002622"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "SubscriptionCorrelationId",
+              "value": "19bb5b80-5bcb-4e40-9eae-ed5b3f9fba6a"
+            }
+          ],
+          "productPrice": []
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    },
+    {
+      "item": {
+        "id": "3",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "relatedOrderItems": [
+          {
+            "role": "ChildOf",
+            "reference": "1"
+          }
+        ],
+        "productOffering": {
+          "id": "SRV1110006747"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "SubscriptionCorrelationId",
+              "value": "19bb5b80-5bcb-4e40-9eae-ed5b3f9fba6a"
+            }
+          ],
+          "productPrice": []
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    },
+    {
+      "item": {
+        "id": "4",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "relatedOrderItems": [
+          {
+            "role": "ChildOf",
+            "reference": "1"
+          }
+        ],
+        "productOffering": {
+          "id": "SRV821110006436"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "SubscriptionCorrelationId",
+              "value": "19bb5b80-5bcb-4e40-9eae-ed5b3f9fba6a"
+            }
+          ],
+          "productPrice": []
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    },
+    {
+      "item": {
+        "id": "5",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "relatedOrderItems": [
+          {
+            "role": "ChildOf",
+            "reference": "1"
+          }
+        ],
+        "productOffering": {
+          "id": "SRV821110006526"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "SubscriptionCorrelationId",
+              "value": "19bb5b80-5bcb-4e40-9eae-ed5b3f9fba6a"
+            }
+          ],
+          "productPrice": []
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    },
+    {
+      "item": {
+        "id": "6",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "relatedOrderItems": [
+          {
+            "role": "ChildOf",
+            "reference": "1"
+          }
+        ],
+        "productOffering": {
+          "id": "SRV821110006582"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "SubscriptionCorrelationId",
+              "value": "19bb5b80-5bcb-4e40-9eae-ed5b3f9fba6a"
+            }
+          ],
+          "productPrice": []
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    },
+    {
+      "item": {
+        "id": "7",
+        "description": "Regular Number",
+        "orderType": "ProductOfferingOrder",
+        "action": "Add",
+        "relatedOrderItems": [
+          {
+            "role": "Requires",
+            "reference": "2"
+          }
+        ],
+        "productOffering": {
+          "id": "SRV1002626"
+        },
+        "product": {
+          "productCharacteristics": [
+            {
+              "name": "msisdnNumber",
+              "value": "966510004050"
+            },
+            {
+              "name": "SubscriptionCorrelationId",
+              "value": "19bb5b80-5bcb-4e40-9eae-ed5b3f9fba6a"
+            }
+          ],
+          "productPrice": [
+            {
+              "popId": "OTC_TAX",
+              "characteristics": [
+                {
+                  "name": "taxRate",
+                  "value": "15.0"
+                }
+              ],
+              "overrideAmount": 0.0
+            },
+            {
+              "popId": "PRC000044",
+              "overrideAmount": 0.0
+            }
+          ]
+        },
+        "quantity": {
+          "amount": 1
+        }
+      }
+    }
+  ],
+  "attrs": [
+    {
+      "name": "serviceOTP",
+      "value": "9999"
+    },
+    {
+      "name": "triggeringSystem",
+      "value": "ONLINE"
+    }
+  ],
+  "relatedEntities": [
+    {
+      "type": "User",
+      "reference": "3LcLtQckS9efcdYVq6Xvkw",
+      "entity": {
+        "entityDetails": [
+          {
+            "name": "languagePreference",
+            "value": "en"
+          },
+          {
+            "name": "isNewUser",
+            "value": "false"
+          },
+          {
+            "name": "contactNumber",
+            "value": "966547125919"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Place",
+      "name": "shippingAddress",
+      "reference": "shippingAddress",
+      "entity": {
+        "entityDetails": [
+          {
+            "name": "address",
+            "value": "509, King Fahd, Riyadh 12272, Saudi Arabia"
+          },
+          {
+            "name": "area",
+            "value": "Riyadh Province"
+          },
+          {
+            "name": "contactNumber",
+            "value": "966547125919"
+          },
+          {
+            "name": "locationId",
+            "value": "LMD01"
+          },
+          {
+            "name": "city",
+            "value": "Riyadh"
+          },
+          {
+            "name": "cityCode",
+            "value": "3"
+          },
+          {
+            "name": "coordinates",
+            "value": "24.7436071,46.6815018"
+          },
+          {
+            "name": "languagePreference",
+            "value": "en"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Store",
+      "reference": "LMD01"
+    },
+    {
+      "type": "Account",
+      "reference": "0-1-5-35535",
+      "entity": {
+        "entityDetails": []
+      }
+    },
+    {
+      "type": "Customer",
+      "name": "Customer",
+      "reference": "146a2dfc-82b7-11ee-bc05-005056b12c94",
+      "entity": {
+        "entityDetails": [
+          {
+            "name": "customerIdType",
+            "value": "1"
+          },
+          {
+            "name": "customerIdNumber",
+            "value": "1001280070"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Channel",
+      "name": "DIGWEB"
+    },
+    {
+      "type": "PayerAccount",
+      "entity": {
+        "entityDetails": [
+          {
+            "name": "type",
+            "value": "total"
+          },
+          {
+            "name": "uniqueTransactionId",
+            "value": "14e811b7-6422-46ca-98b8-d501b1015032"
+          },
+          {
+            "name": "method",
+            "value": "STCPAY"
+          },
+          {
+            "name": "amount",
+            "value": "34.5"
+          },
+          {
+            "name": "currency",
+            "value": "SAR"
+          },
+          {
+            "name": "discountAmount",
+            "value": "0"
+          },
+          {
+            "name": "totalVat",
+            "value": "4.5"
+          },
+          {
+            "name": "totalPaidAmount",
+            "value": "34.5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Subscriber",
+      "reference": "966567577512",
+      "entity": {
+        "entityDetails": [
+          {
+            "name": "isLoggedIn",
+            "value": "true"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Subscriber",
+      "reference": "966510004050",
+      "entity": {
+        "entityDetails": [
+          {
+            "name": "isLoggedIn",
+            "value": "false"
+          }
+        ]
+      }
+    }
+  ],
+  "isLocked": false,
+  "run": true,
+  "requestMode": "Async"
+}

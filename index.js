@@ -3,7 +3,7 @@
 // console.log("tes");
 
 //create a function that loop through array and give an empty array
-
+/* 
 function testArray(arr) {
   if (arr.length > 0) {
     let total = 0;
@@ -15,10 +15,19 @@ function testArray(arr) {
   } else {
     console.log("you entered an empty array");
   }
-}
+} */
 
 let arr1 = [1, 2, 3, 4, 5, 6, 7];
 let arr2 = [];
-testArray(arr1);
-console.log("then print arr2 ");
-testArray(arr2);
+// testArray(arr1);
+// console.log("then print arr2 ");
+// testArray(arr2);
+
+
+exports.test = function print() {
+console.log("my name is omar and welcome to nodejs");
+}
+
+module.exports.testModule = function print1() {
+  console.log("testing new function");
+}

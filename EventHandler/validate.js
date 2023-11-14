@@ -1751,7 +1751,7 @@ else {
 
         }
         if (suspendSubscription) {
-            if (productCategory == common.constants().CONSTANTS.PRODUCT_CATEGORY.Mobile_Line_Offer) {
+            if (productCategory == common.constants().CONSTANTS.PRODUCT_CATEGORY.Mobile_Line_Offer && item.action == common.constants().CONSTANTS.PRODUCT_ACTION.SUSPEND) {
 
                 if (item.product == null)
                     return createError(item.product, null, "Attribute name item.product of productCategory Mobile Line is missing or null value field");
@@ -1762,6 +1762,8 @@ else {
                     var subscriptionId = false;
                     var imsi = false;
                     var msisdn = false;
+                    var reason = false;
+                    var transactionId = false;
 
                     for (var k = 0; k < productCharacteristics.length; k++) {
                         if (productCharacteristics[k].name == null)
@@ -1778,6 +1780,13 @@ else {
                             imsi = true;
                         if (productCharacteristics[k].name == common.constants().CONSTANTS.PRODUCT_CHARACTERISTICS.msisdn)
                             msisdn = true;
+                        if (productCharacteristics[k].name == common.constants().CONSTANTS.PRODUCT_CHARACTERISTICS.reason
+                            && productCharacteristics[k].value.toUpperCase() == "SPAM")
+                            reason = true;
+                            if (reason){
+                                if (productCharacteristics[k].name == common.constants().CONSTANTS.PRODUCT_CHARACTERISTICS.transactionId)
+                                    transactionId = true;
+                            }
                     }
                     if (subscriptionCorrelationId == false)
                         return createError("subscriptionCorrelationId", null, "Attribute subscriptionCorrelationId productCharacteristics.name of productCategory Mobile Line is missing or null value field");
@@ -1789,6 +1798,8 @@ else {
                         return createError("imsi", null, "Attribute imsi productCharacteristics.name of productCategory Mobile Line is missing or null value field");
                     if (msisdn == false)
                         return createError("msisdn", null, "Attribute msisdn productCharacteristics.name of productCategory Mobile Line is missing or null value field");
+                     if (reason == true && transactionId == false)
+                        return createError("transactionId", null, "Attribute transactionId productCharacteristics.name of productCategory Mobile Line is missing or null value field");
 
                 } else {
                     return createError("item.product.productCharacteristics", null, "Object name item.product.productCharacteristics of productCategory Mobile Line is missing or null value field");
