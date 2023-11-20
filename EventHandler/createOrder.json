@@ -1,0 +1,43 @@
+{
+  "isLocked":false,
+  "version":1,
+  "requestedStartDate":"2023-10-23T00:00:07.144Z",
+  "requestedCompletionDate": "2023-10-30T15:08:07.144Z",
+  "orderItems":[
+      {
+      "item":{
+          "id": "0",
+          "orderType": "ProductOfferingOrder",
+          "action": "Add",
+          "productOffering": {
+              "id": "TASK_PO_INTERNET"
+          },
+          "product": {
+                  "productCharacteristics": [
+                      {
+                          "name": "categoryT",
+                          "value": "INTERNET"
+                      }
+                  ]
+              },
+          "quantity":{
+              "amount":1
+          }
+      }
+      }
+  ],
+  "relatedParties":[
+      {
+          "role":"Customer",
+          "reference": "1001"
+      }
+  ],
+  "relatedEntities":[
+      {
+          "type":"Account",
+          "reference": "7890"
+      }
+  ],
+  "attrs":false,
+  "run": true
+}
