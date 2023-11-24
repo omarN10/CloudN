@@ -1,0 +1,12 @@
+Implement function example
+
+Name:         //here name of the function
+
+Assumptions:        //expected context from the function
+
+
+Inputs:         //specifies the inputs of the function
+
+Processes:             //specifies what should the function do like (validation)
+
+outputs:              // expected output of the function like(array, variables)
