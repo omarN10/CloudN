@@ -128,27 +128,44 @@ if (boolTest) {
  */
 
 function validAnagram(str1, str2) {
-    if (str1.length != str2.length) {
-        return false;
-    }
+  if (str1.length != str2.length) {
+    return false;
+  }
 
-    //create two frequency objects of the strings
-    let freqObject1 = {}
-    let freqObject2 = {}
+  //create two frequency objects of the strings
+  let freqObject1 = {};
+  let freqObject2 = {};
 
-    //loop to insert all characters of strings into objects with counter
-    for (const val of str1) {
-        freqObject1[val] = (freqObject1[val] ||0)+1;
-    }
-    for (const val of str2) {
-        freqObject2[val]= (freqObject2[val] || 0) +1;
-    }
+  //loop to insert all characters of strings into objects with counter
+  for (const val of str1) {
+    freqObject1[val] = (freqObject1[val] || 0) + 1;
+  }
+  for (const val of str2) {
+    freqObject2[val] = (freqObject2[val] || 0) + 1;
+  }
 
-    for (const key in freqObject1) {
-        if (freqObject1[key] !== freqObject2[key]) {
-            return false;
-        }
+  for (const key in freqObject1) {
+    if (freqObject1[key] !== freqObject2[key]) {
+      return false;
     }
-    return true;
+  }
+  return true;
 }
 
+/* let str11 = "testing";
+let str12 = "tingtes";
+if (validAnagram(str11,str12)) {
+  console.log("two anagrams are equal");
+} else {
+  console.log("two anagrams are not equal");
+}
+ */
+let testObj = {
+    1:2,
+    2:2
+}
+if (testObj[1]) {
+    console.log("testing");
+}else{
+    console.log("not testing");
+}
