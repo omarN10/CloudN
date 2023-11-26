@@ -1,0 +1,19 @@
+Write a function validAnagram that takes in two strings, str1 and str2,
+and returns a boolean indicating whether or not str1 is an anagram of str2. 
+An anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+typically using all the original letters exactly once.
+
+Implement function example
+
+Name:         valid anagram
+
+Assumptions:     indicating whether or not str1 is an anagram of str2   //expected context from the function
+
+
+Inputs:         str1, str2
+
+Processes:    1. validates the lengths of two strings        //specifies what should the function do like (validation)
+              2. create two frequency objects of the two strings
+              3. loop to check if the two object of the same key are same
+
+outputs:    boolean           // expected output of the function like(array, variables)
