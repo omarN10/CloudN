@@ -17,3 +17,28 @@ Processes:    1. validates the lengths of two strings        //specifies what sh
               3. loop to check if the two object of the same key are same
 
 outputs:    boolean           // expected output of the function like(array, variables)
+
+Write a function quickSort that takes in one array,
+and returns a sorted Array. 
+
+Implement function example
+
+Name:         quickSort
+
+Assumptions:     choose an pivot variable and partition the array into two subarray   //expected context from the function
+                one array containing elements smaller than pivot and 
+                the other containing elements bigger than pivot
+                recursively apply the quick sort algorithm to the two subarrays until the entire array is sorted
+
+
+Inputs:         array
+
+Processes:    1. validate if the array is empty or have one elements return        //specifies what should the function do like (validation)
+              2. choose the pivot as the first variable of the array
+              3. create two empty arrays one containing variables less and greater.
+              4. if the variable is less than the pivot add to to the first array
+              5. if the variable is greater than the pivot add to to the second array
+              6. return array of recursively
+
+
+outputs:    array           // expected output of the function like(array, variables)
