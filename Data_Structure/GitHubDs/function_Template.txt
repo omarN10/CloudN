@@ -18,6 +18,8 @@ Processes:    1. validates the lengths of two strings        //specifies what sh
 
 outputs:    boolean           // expected output of the function like(array, variables)
 
+-----------------------------------------------------------------------------------------------------
+
 Write a function quickSort that takes in one array,
 and returns a sorted Array. 
 
@@ -39,6 +41,24 @@ Processes:    1. validate if the array is empty or have one elements return     
               4. if the variable is less than the pivot add to to the first array
               5. if the variable is greater than the pivot add to to the second array
               6. return array of recursively
+
+
+outputs:    array           // expected output of the function like(array, variables)
+-----------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:         countUniqueValues
+
+//expected context from the function
+Assumptions:  - takes an array which is sorted
+              - return the unique numbers
+
+
+Inputs:         array (sorted)
+
+Processes:    1. validate if the array is empty
+             2. return array of unique values
 
 
 outputs:    array           // expected output of the function like(array, variables)
