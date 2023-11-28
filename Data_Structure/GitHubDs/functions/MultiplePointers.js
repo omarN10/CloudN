@@ -42,3 +42,60 @@ function twoPointers(arr, sumElement) {
 }
 
 // console.log(twoPointers(arr, sum));
+
+
+//palindrome problem with two pointers
+
+var isPalindrome= function (x) {
+  return x == x.toString().split("").reverse().join("");
+}
+
+function palindromeCheck(number) {
+  if (number<1) {
+    return false;
+  }
+  if (number>1) {
+    number = number.toString();
+  }else{
+    return false;
+  }
+  //create two pointers
+  let start = 0;
+  let end = number.length-1;
+  while (start<end) {
+    if (number[start]!=number[end]) {
+      return false;
+    }
+    start++;
+    end--;
+  }
+  return true
+}
+
+// console.log(palindromeCheck(0));
+
+//Given a sorted array, find a pair of numbers that adds up to a specific target sum.
+function findPair(arr, target) {
+  if (arr.length <1) {
+    return [];
+  }
+  //create two pointers 
+  let start =0;
+  let end = arr.length-1;
+  while (start< end) {
+    sum = arr[start] + arr[end];
+    if (sum == target) {
+      return [arr[start],arr[end]]
+    }else if(sum > target){
+      end--;
+    }else{
+      start++;
+    }
+  }
+  return [];
+  
+}
+
+let arrTesting = [1,2,3,4,5,6,7,8,9];
+// console.log(findPair(arrTesting,16));
+

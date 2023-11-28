@@ -62,3 +62,158 @@ Processes:    1. validate if the array is empty
 
 
 outputs:    array           // expected output of the function like(array, variables)
+
+-----------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:         singleNonDuplicate
+
+//expected context from the function
+Assumptions:  - takes an array which is sorted
+              - return the unique numbers
+
+
+Inputs:         array (sorted)
+
+Processes:    1. validate if the array is empty
+             2. return array of unique values
+
+
+outputs:    array           // expected output of the function like(array, variables)
+
+
+-----------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:         findPair
+
+//expected context from the function
+Assumptions:  - takes an array which is sorted
+              - check if array is empty
+              - create two pointers to traverse in the array
+              - if the two pairs adds up equal to specific target
+
+
+Inputs:         array (sorted)/target (integer)
+
+Processes:   1. validate if the array is empty
+             2. create two pointers from start and end
+             3. check if the sum of two pairs equals target
+             4. if sum is greater than target decrement end
+             5. if sum is less than target increment start
+
+             
+
+
+outputs:    array   of two values         // expected output of the function like(array, variables)
+
+-----------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:         maxSubArray
+
+//expected context from the function
+Assumptions:  - takes an array which
+              - check if array is empty
+              - 
+
+Inputs:         array (sorted)/target (integer)
+
+Processes:   1. validate if the array is empty
+             2. create two pointers from start and end
+             3. check if the sum of  pointers is greatest
+             5. if difference between two pointers == k
+
+             
+
+
+outputs:    maxSum         // expected output of the function like(array, variables)
+
+-----------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:         binarySearchTest
+
+//expected context from the function
+Assumptions:  - takes an array which is sorted
+              - create two pointers (start and end) 
+              - create mid that divides (start and end)
+              - check if the mid equals the target value 
+              - if the mid is greater the target (decrement end) 
+              - if the mid is less the target (increment start) 
+
+
+Inputs:         array (sorted)/target (integer)
+
+Processes:   1. validate if the array is empty
+             2. create two pointers from start and end
+             3. create mid
+             3. check if the mid of pointers equals to target
+             4. if mid is greater than the target (decrement end)
+             5. if mid is less than the target (increment start)
+
+
+             
+
+
+outputs:    index of mid         // expected output of the function like(array, variables)
+
+-----------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:         searchTest
+
+//expected context from the function
+Assumptions:  - takes an sorted array 
+              - create two pointers (start and end) 
+              - create mid that divides (start and end)
+              - check if the mid equals the target value 
+              - if the mid is greater the target (decrement end) 
+              - if the mid is less the target (increment start) 
+
+
+Inputs:         array (sorted)/target (integer)
+
+Processes:   1. validate if the array is empty
+             2. create two pointers from start and end
+             3. create mid
+             3. check if the mid of pointers equals to target
+             4. if mid is greater than the target (decrement end)
+             5. if mid is less than the target (increment start)
+
+
+             
+
+
+outputs:    index of mid         // expected output of the function like(array, variables)
+
+-----------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:         collectOdd
+
+//expected context from the function
+Assumptions:  - takes an array of numbers 
+              -  returns new array
+
+
+Inputs:         array (sorted)/target (integer)
+
+Processes:   1. validate if the array is empty
+             2. create two pointers from start and end
+             3. create mid
+             3. check if the mid of pointers equals to target
+             4. if mid is greater than the target (decrement end)
+             5. if mid is less than the target (increment start)
+
+
+             
+
+
+outputs:    newArray         // expected output of the function like(array, variables)

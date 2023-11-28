@@ -12,4 +12,22 @@ function fact(number) {
 
   return number + fact(number - 1);
 }
-console.log(fact(5));
+// console.log(fact(5));
+
+//practice on recursion
+
+function getMultiplication(number) {
+  //base case
+  if (number <= 1) {
+    return 1;
+  }
+
+  return number * getMultiplication(number - 1);
+}
+
+//recursion when a function calls itself
+// const nTerms = prompt('Enter the number of terms: ');
+
+// Write a function called collectOdd that takes in an array of numbers and
+// returns a new array containing only the odd numbers from the input array.
+//The function should use recursion to achieve this, and should not modify the original input array.
