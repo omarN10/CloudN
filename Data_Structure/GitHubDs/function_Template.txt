@@ -200,18 +200,14 @@ Name:         collectOdd
 
 //expected context from the function
 Assumptions:  - takes an array of numbers 
-              -  returns new array
+              - returns new array 
+              - new array contains only odd numbers
 
 
-Inputs:         array (sorted)/target (integer)
+Inputs:         array 
 
 Processes:   1. validate if the array is empty
-             2. create two pointers from start and end
-             3. create mid
-             3. check if the mid of pointers equals to target
-             4. if mid is greater than the target (decrement end)
-             5. if mid is less than the target (increment start)
-
+             2. using recursion check if the number is odd and add to new array
 
              
 
