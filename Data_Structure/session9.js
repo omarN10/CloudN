@@ -181,8 +181,8 @@ module.exports = class linkedList {
     }
     else{
       var parentNode = this.findParent(this.tail);
+      parentNode.next = null;
       this.tail = parentNode;
-      // parentNode.next = null;
       this.length--;
     }
   }
