@@ -54,6 +54,13 @@ module.exports = class linkedList {
     }
     console.log(print_data);
   }
+  isExist(_data) {
+    if (this.find(_data)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   find(_data) {
     for (var itr = this.begin(); itr.current() != null; itr.next()) {
@@ -71,7 +78,18 @@ module.exports = class linkedList {
     }
     return null;
   }
+  canInsert(_data) {
+    if (this.unique && this.isExist(_data)) {
+      console.log(_data, "Already exist");
+      return false;
+    } else {
+      return true;
+    }
+  }
   insertLast(_data) {
+    if (!this.canInsert(_data)) {
+      return;
+    }
     var newNode = new linkedListNode(_data);
     if (this.head == null) {
       this.head = newNode;
@@ -83,6 +101,9 @@ module.exports = class linkedList {
     this.length++;
   }
   insertAfter(node_data, _data) {
+    if (!this.canInsert(_data)) {
+      return;
+    }
     var node = this.find(node_data);
     var newNode = new linkedListNode(_data);
     newNode.next = node.next;
@@ -93,6 +114,9 @@ module.exports = class linkedList {
     this.length++;
   }
   insertBefore(node_data, _data) {
+    if (!this.canInsert(_data)) {
+      return;
+    }
     var node = this.find(node_data);
     var newNode = new linkedListNode(_data);
     newNode.next = node;
@@ -125,6 +149,42 @@ module.exports = class linkedList {
     }
     this.length--;
     node = null;
+  }
+  insertFirst(_data) {
+    if (!this.canInsert(_data)) {
+      return;
+    }
+    var newNode = new linkedListNode(_data);
+    if (this.head == null) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+      this.head = newNode;
+    }
+    this.length++;
+  }
+  deleteHead() {
+    if (this.head == null) {
+      return;
+    }
+    this.head = this.head.next;
+    this.length--;
+  }
+  deleteLast() {
+    if (this.head == null) {
+      return;
+    } else if (this.head == this.tail) {
+      this.head = null;
+      this.tail = null;
+      this.length--;
+    }
+    else{
+      var parentNode = this.findParent(this.tail);
+      this.tail = parentNode;
+      // parentNode.next = null;
+      this.length--;
+    }
   }
 };
 
