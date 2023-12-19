@@ -1,0 +1,15 @@
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.csproj.AssemblyReference.cache
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.GeneratedMSBuildEditorConfig.editorconfig
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.AssemblyInfoInputs.cache
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.AssemblyInfo.cs
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.csproj.CoreCompileInputs.cache
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\bin\Debug\net7.0\cSharp.exe
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\bin\Debug\net7.0\cSharp.deps.json
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\bin\Debug\net7.0\cSharp.runtimeconfig.json
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\bin\Debug\net7.0\cSharp.dll
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\bin\Debug\net7.0\cSharp.pdb
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.dll
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\refint\cSharp.dll
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.pdb
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\cSharp.genruntimeconfig.cache
+F:\o\Coding\js projects\cloudBaseNative\CloudN\Data_Structure\cSharp\obj\Debug\net7.0\ref\cSharp.dll

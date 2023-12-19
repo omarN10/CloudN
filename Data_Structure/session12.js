@@ -46,4 +46,5 @@ module.exports= class Queue {
   print() {
     this.#data_list.printList();
   }
+  
 }

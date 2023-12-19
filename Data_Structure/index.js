@@ -1,7 +1,7 @@
 //Testing linkedList from session9
 const linkedList = require("./session9.js");
-// const Stack = require("./session10.js"); //based on linked list
-const Stack = require("./session11.js"); //based on array
+// const Stack = require("./session10.js"); //stack based on linked list
+const Stack = require("./session11.js"); //stack based on array
 const Queue = require("./session12.js"); //get the queue
 /* 
 var list = new linkedList(true);
@@ -38,17 +38,24 @@ while (!stack.isEmpty()) {
  */
 
 let queue = new Queue();
+//adding elements
 queue.enqueue(5);
 queue.enqueue(10);
 queue.enqueue(20);
 queue.enqueue(30);
-// queue.print();
-// queue.dequeue();
-// queue.print();
-console.log(queue.peek());
+
+// console.log("dequeue:", queue.dequeue().data);
+console.log("queue peek: ", queue.peek());
+console.log(`queue size is: ${queue.size()}`);
+
+while (queue.size()) {
+  queue.print();
+  queue.dequeue();
+}
 
 if (queue.isEmpty()) {
   console.log("queue is empty");
 } else {
   console.log("queue is not empty");
 }
+// let length = queue.size();
