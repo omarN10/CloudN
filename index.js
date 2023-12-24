@@ -31,3 +31,46 @@ console.log("my name is omar and welcome to nodejs");
 module.exports.testModule = function print1() {
   console.log("testing new function");
 }
+
+
+
+
+//swap coding practice
+
+//swap using minus
+let num1 = 36;
+let num2 = 10;
+/* console.log(`num1= ${num1}`);
+console.log(`num2= ${num2}`);
+
+console.log("------------")
+
+num1 = num1 + num2;
+console.log(num1);
+num2 = num1 - num2;
+console.log(num2);
+num1 = num1 - num2;
+console.log(num1);
+console.log("------------")
+console.log("after swapping");
+console.log(`num1= ${num1}`);
+console.log(`num2= ${num2}`);
+ */
+
+//swap using xor
+// console.log(`num1= ${num1}`);
+// console.log(`num2= ${num2}`);
+
+num1 = num1 ^ num2;
+console.log(num1)
+num2 = num1 ^ num2;
+console.log(num2)
+num1 = num1 ^ num2;
+console.log(num2)
+console.log(num1)
+
+console.log("--------")
+console.log(`num1= ${num1}`);
+console.log(`num2= ${num2}`);
+
+//using temp variable

@@ -40,6 +40,13 @@ module.exports= class Queue {
       return false;
     }
   }
+  hasData() {
+    if (this.#data_list.length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   size() {
     return this.#data_list.length;
   }

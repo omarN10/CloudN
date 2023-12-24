@@ -1,0 +1,36 @@
+Implement function example
+
+Name:        myAtoi //here name of the function
+
+Assumptions:      converts a string to a 32-bit signed integer  //expected context from the function
+                igonore whitespaces and _
+
+Inputs:         string //specifies the inputs of the function
+
+Processes:             //specifies what should the function do like (validation)
+            1. read and ignore any white space
+            2. validate the last character if it's (-)OR (+)
+            3.ignore white space by continue
+            
+
+outputs:              // expected output of the function like(array, variables)
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Implement function example
+
+Name:        removeDuplicates //here name of the function
+
+Inputs:         array //specifies the inputs of the function
+
+Assumptions: Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
+             The relative order of the elements should be kept the same.
+             Then return the number of unique elements in nums.
+
+
+Processes:      
+            1. check if the array is empty
+            2. create a set from array
+            3. set k to size of the set
+            
+
+outputs:        K: return number of unique numbers     // expected output of the function like(array, variables)
